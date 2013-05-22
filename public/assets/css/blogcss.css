@@ -1,0 +1,184 @@
+html,
+body {
+    height: 100%;
+ /*Uncomment next 5 lines for full-sized, centered image.*/  
+/*    background: url('/assets/img/large/1024.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; /*background-size: cover;*/
+}
+
+body{
+/*    background: url('/assets/img/large/1024.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; *//*background-size: cover;*/
+/*background-color: yellow;*/
+
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 60px;
+}
+#footer {
+    background-color: #f5f5f5;
+}
+
+
+#wrap > .container {
+    padding-top: 60px;
+}
+.container .credit {
+    margin: 20px 0;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 550px) {
+
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+body {
+    /*font-family: 'Georgia', sans-serif;*/
+
+
+
+}
+
+.sunset {
+    /*margin: 10px;*/
+    padding: 12px;
+    /*background-color: #95B3BF;*/
+    /*opacity: 50%;*/
+    background-color:rgba(242,214,179,0.4);
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+h1 { font-size: 4em;
+    color: rgb(65,127,166);
+}
+
+h2, h3, h4, h5, h6{
+    /*color: rgb(65,127,166);*/
+}
+.company{
+    /*font-size: 10em;*/
+    font-variant: italic;
+    font-weight: bold;
+    color: rgb(65,127,166);
+}
+
+i.mybutton{
+    background-color: rgb(65,127,166);
+}
+/*    @font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url("path-to-the-font-file/GraublauWebBold.otf") format("opentype");
+    }*/
+
+/*.span3{
+    background-color:rgb(189, 188, 132);
+}
+.span4{
+    background-color:#FFCF73; 
+}
+.span5{
+    background-color: #5cc369;
+}
+.span6{
+    background-color: #5dcfc3;
+}
+.hero-unit{
+    background-color: #FFb173;
+}*/
+
+
+/* Social Icons 
+----------------------------------------------- */
+
+a.social-icon {
+    margin-right: 5px; /*Adjust This Value As Needed*/
+/*    opacity: .7;
+    filter:alpha(opacity=70);*/
+}
+
+a.social-icon:hover {
+    opacity: .7;
+    filter:alpha(opacity=70);
+ /* For IE8 and earlier */
+}
+/*.navbar{
+    font-family: 'Kavoon', cursive;
+}*/
+
+/*bootstrap line 837*/
+.carousel-inner>.item>img,.carousel-inner>.item>a>
+img{display:block;line-height:1;width:100%;}
+.carousel-caption>h1{
+    color:white;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+p{
+    /*min-height: parent -10px;*/
+}
+
+.featurette img{
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+.span4 {
+
+    /*http://stackoverflow.com/questions/8793876/twitter-bootstrap-borders/10779289#10779289*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding: 20px;
+/*    background-color: #D9D9D9;*/
+}
+
+/*@shaded=rgba(242,214,179,0.4);*/
+
+.secondary{
+background-color:rgba(242,214,179,0.4);
+/*margin 10px;*/
+}
+
+.row{
+    /*background-color: red;*/
+    margin-top: 15px;
+}
+/*.sunset{
+    background-image: url('/assets/img/large/1024.jpg') no-repeat center center fixed;
+}*/
+
+img {
+    max-height: 600px;
+}
+

@@ -1,0 +1,45 @@
+[15-May-2013 01:53:30 CST6CDT] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/public/index.php on line 3
+[15-May-2013 06:54:51 UTC] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/app/routes.php on line 2
+[15-May-2013 06:55:38 UTC] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/app/routes.php on line 2
+[15-May-2013 06:58:23 UTC] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/app/routes.php on line 15
+[15-May-2013 20:00:22 UTC] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/app/routes.php on line 15
+[15-May-2013 23:20:56 UTC] PHP Fatal error:  Class 'Andrew13\Helpers\Tidy' not found in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 25
+[15-May-2013 23:21:07 UTC] PHP Fatal error:  Class 'Andrew13\Helpers\Tidy' not found in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 25
+[15-May-2013 23:21:51 UTC] PHP Fatal error:  Class 'Andrew13\Helpers\Tidy' not found in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 25
+[15-May-2013 23:24:28 UTC] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/app/controllers/BlogController.php on line 12
+[15-May-2013 23:24:53 UTC] PHP Fatal error:  Call to undefined function dd() in /home/gristech/l4/app/controllers/BlogController.php on line 12
+[15-May-2013 23:25:07 UTC] PHP Fatal error:  Class 'Andrew13\Helpers\Tidy' not found in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 25
+[15-May-2013 23:27:49 UTC] PHP Fatal error:  Class 'Andrew13\Helpers\Tidy' not found in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 25
+[15-May-2013 23:28:09 UTC] PHP Fatal error:  Class 'Andrew13\Helpers\tidy' not found in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 25
+[15-May-2013 23:29:17 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/gristech/l4/app/library/Andrew13/Helpers/String.php on line 52
+[16-May-2013 00:40:22 UTC] PHP Fatal error:  Class 'HTML' not found in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b on line 6
+[16-May-2013 00:40:42 UTC] PHP Fatal error:  Class 'HTML' not found in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b on line 6
+[16-May-2013 01:02:31 UTC] PHP Fatal error:  Class 'HTML' not found in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b on line 6
+[16-May-2013 01:03:44 UTC] PHP Fatal error:  Class 'HTML' not found in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b on line 6
+[16-May-2013 01:03:57 UTC] PHP Fatal error:  Class 'HTML' not found in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b on line 6
+[16-May-2013 01:18:37 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/gristech/l4/app/routes.php on line 132
+[16-May-2013 03:43:36 UTC] PHP Fatal error:  Call to undefined function render() in /home/gristech/l4/app/storage/views/89676b58e79cf12c33eaf32e10c79de4 on line 13
+[16-May-2013 04:12:00 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/gristech/l4/app/controllers/DemoController.php on line 3
+[16-May-2013 08:18:13 UTC] PHP Fatal error:  Class 'Url' not found in /home/gristech/l4/app/routes.php on line 148
+[16-May-2013 08:24:48 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 08:25:52 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 08:37:49 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 08:47:51 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 08:50:35 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 08:50:50 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 09:11:49 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 09:14:04 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 09:21:39 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 09:30:36 UTC] PHP Fatal error:  Call to undefined method Illuminate\Http\RedirectResponse::with_errors() in /home/gristech/l4/app/routes.php on line 152
+[16-May-2013 09:33:18 UTC] PHP Fatal error:  Call to undefined function dump() in /home/gristech/l4/app/routes.php on line 146
+[17-May-2013 00:04:40 UTC] PHP Fatal error:  Class 'Asset' not found in /home/gristech/l4/app/storage/views/229b2c78970a138af4abb4de5d4dda7c on line 15
+[17-May-2013 00:34:58 UTC] PHP Fatal error:  Class 'Asset' not found in /home/gristech/l4/app/storage/views/229b2c78970a138af4abb4de5d4dda7c on line 15
+[17-May-2013 00:49:54 UTC] PHP Fatal error:  Class 'Asset' not found in /home/gristech/l4/app/storage/views/229b2c78970a138af4abb4de5d4dda7c on line 17
+[17-May-2013 00:50:27 UTC] PHP Fatal error:  Class 'Asset' not found in /home/gristech/l4/app/storage/views/229b2c78970a138af4abb4de5d4dda7c on line 17
+[17-May-2013 00:50:48 UTC] PHP Fatal error:  Class 'HTML' not found in /home/gristech/l4/app/storage/views/229b2c78970a138af4abb4de5d4dda7c on line 21
+[17-May-2013 01:16:23 UTC] PHP Fatal error:  Class 'Asset' not found in /home/gristech/l4/app/storage/views/229b2c78970a138af4abb4de5d4dda7c on line 17
+[17-May-2013 01:30:54 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/gristech/l4/app/config/packages/jasonlewis/basset/config.php on line 38
+[17-May-2013 07:49:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/gristech/l4/app/routes.php on line 203
+[17-May-2013 08:01:22 UTC] PHP Fatal error:  Using $this when not in object context in /home/gristech/l4/app/routes.php on line 117
+[17-May-2013 08:02:58 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/gristech/l4/app/routes.php on line 117
+[19-May-2013 08:10:01 UTC] PHP Fatal error:  Call to undefined function render() in /home/gristech/l4/app/storage/views/c9abc10009503054cba1379e7b1f5c7a on line 1

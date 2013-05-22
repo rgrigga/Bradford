@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+	Options -MultiViews
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.+)/$ http://%{HTTP_HOST}/$1 [R=301,L]
+#	RewriteRule !^([a-z0-9-]+)($|/) /apps/%2%{REQUEST_URI} [PT,L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^ index.php [L]
+</IfModule>

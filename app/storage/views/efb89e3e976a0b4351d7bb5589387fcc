@@ -1,0 +1,7 @@
+<?php $__env->startSection('content'); ?>
+<h2>howdy!</h2>
+<?php echo Form::open(); ?>
+<?php echo Form::submit('Foo', array());; ?>
+<?php echo Form::close(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.demo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,1708 @@
+[2013-05-16 00:34:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:34:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:34:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blogs')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blogs')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 00:35:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/vendor/zizaco/entrust/src/Zizaco/Entrust/Entrust.php(118): Illuminate\Foundation\Application->abort(404)
+#1 [internal function]: Zizaco\Entrust\Entrust->Zizaco\Entrust\{closure}(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(14855): call_user_func_array(Object(Closure), Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(14805): Illuminate\Routing\Route->callFilter('admin_b1b79d', Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/bootstrap/compiled.php(14766): Illuminate\Routing\Route->callBeforeFilters(Object(Illuminate\Http\Request))
+#5 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-05-16 00:35:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/vendor/zizaco/entrust/src/Zizaco/Entrust/Entrust.php(118): Illuminate\Foundation\Application->abort(404)
+#1 [internal function]: Zizaco\Entrust\Entrust->Zizaco\Entrust\{closure}(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(14855): call_user_func_array(Object(Closure), Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(14805): Illuminate\Routing\Route->callFilter('admin_b1b79d', Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/bootstrap/compiled.php(14766): Illuminate\Routing\Route->callBeforeFilters(Object(Illuminate\Http\Request))
+#5 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-05-16 00:40:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:40:22] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'HTML' not found' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 00:40:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:40:42] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'HTML' not found' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 00:40:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:40:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:42:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:42:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:42:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:42:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:42:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:42:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:43:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 00:50:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 00:50:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:02:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:02:31] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'HTML' not found' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 01:03:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'HTML' not found' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 01:03:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:03:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'HTML' not found' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 01:04:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:04:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:04:50] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:10:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:18:37] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'Route' (T_STRING)' in /home/gristech/l4/app/routes.php:132
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 01:19:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:19:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 01:19:24] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:4
+Stack trace:
+#0 /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b(4): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', '/home/gristech/...', 4, Array)
+#1 /home/gristech/l4/bootstrap/compiled.php(17390): include('/home/gristech/...')
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/gristech/...', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(17154): Illuminate\View\Engines\CompilerEngine->get('/home/gristech/...', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(17137): Illuminate\View\View->getContents()
+#5 /home/gristech/l4/bootstrap/compiled.php(17166): Illuminate\View\View->render()
+#6 /home/gristech/l4/bootstrap/compiled.php(17154): Illuminate\View\View->gatherData()
+#7 /home/gristech/l4/bootstrap/compiled.php(17137): Illuminate\View\View->getContents()
+#8 /home/gristech/l4/bootstrap/compiled.php(18463): Illuminate\View\View->render()
+#9 /home/gristech/l4/bootstrap/compiled.php(17477): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#10 /home/gristech/l4/bootstrap/compiled.php(8641): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#11 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'show', Object(Robbo\Presenter\View\View))
+#13 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'show', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('3')
+#15 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#16 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#17 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2013-05-16 01:19:30] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b:4
+Stack trace:
+#0 /home/gristech/l4/app/storage/views/f4aaa36c344f3d43696b8161c9a6fc3b(4): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', '/home/gristech/...', 4, Array)
+#1 /home/gristech/l4/bootstrap/compiled.php(17390): include('/home/gristech/...')
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/gristech/...', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(17154): Illuminate\View\Engines\CompilerEngine->get('/home/gristech/...', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(17137): Illuminate\View\View->getContents()
+#5 /home/gristech/l4/bootstrap/compiled.php(17166): Illuminate\View\View->render()
+#6 /home/gristech/l4/bootstrap/compiled.php(17154): Illuminate\View\View->gatherData()
+#7 /home/gristech/l4/bootstrap/compiled.php(17137): Illuminate\View\View->getContents()
+#8 /home/gristech/l4/bootstrap/compiled.php(18463): Illuminate\View\View->render()
+#9 /home/gristech/l4/bootstrap/compiled.php(17477): Illuminate\Http\Response->setContent(Object(Robbo\Presenter\View\View))
+#10 /home/gristech/l4/bootstrap/compiled.php(8641): Symfony\Component\HttpFoundation\Response->__construct(Object(Robbo\Presenter\View\View))
+#11 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(156): Illuminate\Routing\Router->prepare(Object(Robbo\Presenter\View\View), Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'show', Object(Robbo\Presenter\View\View))
+#13 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'show', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('40000')
+#15 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#16 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#17 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2013-05-16 01:19:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 02:27:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 02:27:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 02:50:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 02:50:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:08:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:08:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:08:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:10:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:10:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:10:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:10:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:10:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:10:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:12:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:12:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:12:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:20:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:20:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:20:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:28:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:28:56] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:29:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:29:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:29:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 03:43:36] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function render()' in /home/gristech/l4/app/storage/views/89676b58e79cf12c33eaf32e10c79de4:13
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 04:12:00] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '<'' in /home/gristech/l4/app/controllers/DemoController.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 04:12:26] log.ERROR: exception 'InvalidArgumentException' with message 'View [demo/index] not found.' in /home/gristech/l4/bootstrap/compiled.php:15295
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(15249): Illuminate\View\FileViewFinder->findInPaths('demo/index', Array)
+#1 /home/gristech/l4/vendor/robclancy/presenter/src/Robbo/Presenter/View/Environment.php(20): Illuminate\View\FileViewFinder->find('demo/index')
+#2 /home/gristech/l4/bootstrap/compiled.php(5381): Robbo\Presenter\View\Environment->make('demo/index', Array)
+#3 /home/gristech/l4/app/controllers/DemoController.php(18): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 /home/gristech/l4/app/controllers/DemoController.php(18): Illuminate\Support\Facades\View::make('demo/index', Array)
+#5 [internal function]: DemoController->getIndex()
+#6 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#7 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getIndex', Array)
+#8 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#11 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#12 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-05-16 04:12:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blog')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blog')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 04:26:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blog')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blog')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 04:34:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blog')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blog')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 04:51:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blog')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blog')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 04:55:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 04:55:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 04:55:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 04:55:16] log.ERROR: exception 'InvalidArgumentException' with message 'View [contact-us] not found.' in /home/gristech/l4/bootstrap/compiled.php:15295
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(15249): Illuminate\View\FileViewFinder->findInPaths('contact-us', Array)
+#1 /home/gristech/l4/vendor/robclancy/presenter/src/Robbo/Presenter/View/Environment.php(20): Illuminate\View\FileViewFinder->find('contact-us')
+#2 /home/gristech/l4/bootstrap/compiled.php(5379): Robbo\Presenter\View\Environment->make('contact-us')
+#3 /home/gristech/l4/app/routes.php(105): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 /home/gristech/l4/app/routes.php(105): Illuminate\Support\Facades\View::make('contact-us')
+#5 [internal function]: {closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 04:55:21] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 04:56:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 05:23:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 05:26:45] log.ERROR: exception 'ReflectionException' with message 'Class SurlController does not exist' in /home/gristech/l4/bootstrap/compiled.php:340
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(340): ReflectionClass->__construct('SurlController')
+#1 /home/gristech/l4/bootstrap/compiled.php(295): Illuminate\Container\Container->build('SurlController', Array)
+#2 /home/gristech/l4/bootstrap/compiled.php(909): Illuminate\Container\Container->make('SurlController', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8311): Illuminate\Foundation\Application->make('SurlController')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:27:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 05:30:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:30:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:30:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:30:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:31:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:31:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:39:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:39:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:41:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:41:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:41:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:41:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:41:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:41:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:44:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:44:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:44:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:44:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:45:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 05:45:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 06:03:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 06:03:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 06:14:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 07:01:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 07:01:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 07:01:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 07:01:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-16 07:29:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 07:39:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 07:47:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 07:49:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 07:57:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 07:59:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 08:18:13] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Url' not found' in /home/gristech/l4/app/routes.php:148
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:23:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('surl')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('surl')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 08:23:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('surl')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('surl')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 08:24:48] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:25:52] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:37:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:47:51] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:50:35] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:50:50] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 08:54:14] log.ERROR: exception 'ErrorException' with message 'Undefined variable: surl' in /home/gristech/l4/app/controllers/SurlController.php:36
+Stack trace:
+#0 /home/gristech/l4/app/controllers/SurlController.php(36): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home/gristech/...', 36, Array)
+#1 [internal function]: SurlController->store()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 09:00:39] log.ERROR: exception 'ErrorException' with message 'Undefined variable: url' in /home/gristech/l4/app/controllers/SurlController.php:36
+Stack trace:
+#0 /home/gristech/l4/app/controllers/SurlController.php(36): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home/gristech/...', 36, Array)
+#1 [internal function]: SurlController->store()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 09:01:17] log.ERROR: exception 'ErrorException' with message 'Missing argument 1 for SurlController::store()' in /home/gristech/l4/app/controllers/SurlController.php:34
+Stack trace:
+#0 /home/gristech/l4/app/controllers/SurlController.php(34): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', '/home/gristech/...', 34, Array)
+#1 [internal function]: SurlController->store()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 09:02:32] log.ERROR: exception 'ErrorException' with message 'Undefined variable: url' in /home/gristech/l4/app/controllers/SurlController.php:36
+Stack trace:
+#0 /home/gristech/l4/app/controllers/SurlController.php(36): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home/gristech/...', 36, Array)
+#1 [internal function]: SurlController->store()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 09:10:36] log.ERROR: exception 'ErrorException' with message 'Undefined variable: url' in /home/gristech/l4/app/controllers/SurlController.php:36
+Stack trace:
+#0 /home/gristech/l4/app/controllers/SurlController.php(36): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', '/home/gristech/...', 36, Array)
+#1 [internal function]: SurlController->store()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('store', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'store', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 09:11:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 09:14:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 09:21:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 09:30:36] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 09:32:34] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Validation\Validator::$errors' in /home/gristech/l4/app/routes.php:151
+Stack trace:
+#0 /home/gristech/l4/app/routes.php(151): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', '/home/gristech/...', 151, Array)
+#1 [internal function]: {closure}()
+#2 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#4 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-05-16 09:33:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function dump()' in /home/gristech/l4/app/routes.php:146
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-16 09:38:13] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Validation\Validator::$errors' in /home/gristech/l4/app/routes.php:152
+Stack trace:
+#0 /home/gristech/l4/app/routes.php(152): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', '/home/gristech/...', 152, Array)
+#1 [internal function]: {closure}()
+#2 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#4 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-05-16 09:40:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 09:40:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 09:42:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('demo')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('demo')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 20:40:48] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blog')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blog')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 22:53:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('demo')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('demo')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 22:54:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 22:55:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 22:57:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 22:58:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 22:58:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 22:59:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 22:59:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 /home/gristech/l4/app/controllers/BlogController.php(39): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('foo')
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('foo')
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 23:03:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('index', Array)
+#1 [internal function]: DemoController->index()
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('index', Array)
+#4 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'index', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-16 23:50:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:50:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:50:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:50:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:50:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:50:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:50:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:55:59] log.ERROR: exception 'InvalidArgumentException' with message 'View [demo] not found.' in /home/gristech/l4/bootstrap/compiled.php:15295
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(15249): Illuminate\View\FileViewFinder->findInPaths('demo', Array)
+#1 /home/gristech/l4/vendor/robclancy/presenter/src/Robbo/Presenter/View/Environment.php(20): Illuminate\View\FileViewFinder->find('demo')
+#2 /home/gristech/l4/bootstrap/compiled.php(5379): Robbo\Presenter\View\Environment->make('demo')
+#3 /home/gristech/l4/app/controllers/BaseController.php(25): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 /home/gristech/l4/app/controllers/BaseController.php(25): Illuminate\Support\Facades\View::make('demo')
+#5 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(111): BaseController->setupLayout()
+#6 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-16 23:56:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []

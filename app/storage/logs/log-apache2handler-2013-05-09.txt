@@ -1,0 +1,1328 @@
+[2013-05-09 07:37:38] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'user'@'localhost' (using password: YES)' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'user', 'password', Array)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11553): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11409): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11381): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11121): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11092): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(10435): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(10389): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11278): Illuminate\Database\Eloquent\Model->newQuery()
+#10 [internal function]: Illuminate\Database\Eloquent\Model->__call('orderBy', Array)
+#11 [internal function]: Post->orderBy('created_at', 'DESC')
+#12 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(11291): call_user_func_array(Array, Array)
+#13 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(13): Illuminate\Database\Eloquent\Model::__callStatic('orderBy', Array)
+#14 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(13): Post::orderBy('created_at', 'DESC')
+#15 [internal function]: BlogController->getIndex()
+#16 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#17 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getIndex', Array)
+#18 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#21 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#22 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#23 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#26 {main} [] []
+[2013-05-09 07:58:13] log.ERROR: exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bs_sample_site.posts' doesn't exist (SQL: select count(*) as aggregate from `posts`) (Bindings: array (
+))' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Connection.php:494
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Connection.php(467): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Connection.php(261): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(913): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1124): Illuminate\Database\Query\Builder->get(Array)
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1066): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1041): Illuminate\Database\Query\Builder->count()
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(199): Illuminate\Database\Query\Builder->getPaginationCount()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(170): Illuminate\Database\Eloquent\Builder->ungroupedPaginate(Object(Illuminate\Pagination\Environment), 10, Array)
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(13): Illuminate\Database\Eloquent\Builder->paginate(10)
+#9 [internal function]: BlogController->getIndex()
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getIndex', Array)
+#12 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#15 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#16 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-05-09 08:02:15] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:02:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:22:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:22:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:22:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:23:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:24:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:24:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:24:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:24:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:24:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:25:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:26:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:26:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:28:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:28:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:29:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:29:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:29:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:29:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:29:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:30:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:36:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:36:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:1120
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('foo')
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('foo')
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-09 08:36:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:37:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 08:51:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 09:08:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:1120
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('home')
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('home')
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-09 09:20:40] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ''demo@index'' (T_CONSTANT_ENCAPSED_STRING), expecting '&' or variable (T_VARIABLE)' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\routes.php:105
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-09 09:23:14] log.ERROR: exception 'ReflectionException' with message 'Class demo does not exist' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:340
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(340): ReflectionClass->__construct('demo')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(295): Illuminate\Container\Container->build('demo', Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(909): Illuminate\Container\Container->make('demo', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8311): Illuminate\Foundation\Application->make('demo')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 09:23:44] log.ERROR: exception 'ReflectionException' with message 'Class demo does not exist' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:340
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(340): ReflectionClass->__construct('demo')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(295): Illuminate\Container\Container->build('demo', Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(909): Illuminate\Container\Container->make('demo', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8311): Illuminate\Foundation\Application->make('demo')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 09:25:52] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Base_Controller' not found' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\DemoController.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-09 09:34:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'Route' (T_STRING)' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\routes.php:111
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-05-09 09:34:50] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:302
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->__call('getIndex', Array)
+#1 [internal function]: HomeController->getIndex()
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getIndex', Array)
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-05-09 09:42:16] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:08:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:10:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:10:30] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:15:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:15:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:17:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:17:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:17:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:17:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:17:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:17:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:19:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:19:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings-white.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('admin-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('admin-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:20:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:21:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:21:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:24:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 10:24:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:30:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:31:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 10:33:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:1120
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('css')
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('css')
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-09 11:08:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 11:08:44] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:22:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:22:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:22:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:22:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:22:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:36:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 20:57:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:08] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:57:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-09 20:58:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 21:03:53] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 21:05:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 21:07:31] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 21:07:56] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-09 21:08:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:1120
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(5379): Illuminate\Foundation\Application->abort(404)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\Facade::__callStatic('abort', Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\controllers\BlogController.php(38): Illuminate\Support\Facades\App::abort(404)
+#3 [internal function]: BlogController->getView('blog')
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('blog')
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-05-09 21:08:13] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\jasonlewis\basset\src\Basset\Output\Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []

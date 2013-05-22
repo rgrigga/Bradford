@@ -1,0 +1,678 @@
+[2013-05-20 01:26:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-20 06:38:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 06:40:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 06:44:13] log.ERROR: exception 'Swift_TransportException' with message 'Connection could not be established with host smtp.postmarkapp.com [Connection timed out #110]' in /home/gristech/l4/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php:259
+Stack trace:
+#0 /home/gristech/l4/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php(64): Swift_Transport_StreamBuffer->_establishSocketConnection()
+#1 /home/gristech/l4/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(115): Swift_Transport_StreamBuffer->initialize(Array)
+#2 /home/gristech/l4/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(80): Swift_Transport_AbstractSmtpTransport->start()
+#3 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(291): Swift_Mailer->send(Object(Swift_Message))
+#4 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(120): Illuminate\Mail\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /home/gristech/l4/vendor/zizaco/confide/src/Zizaco/Confide/ConfideUser.php(281): Illuminate\Mail\Mailer->send('confide::emails...', Array, Object(Closure))
+#6 /home/gristech/l4/vendor/zizaco/confide/src/Zizaco/Confide/ConfideUser.php(204): Zizaco\Confide\ConfideUser->sendEmail('confide::confid...', 'confide::emails...', Array)
+#7 /home/gristech/l4/vendor/laravelbook/ardent/src/LaravelBook/Ardent/Ardent.php(208): Zizaco\Confide\ConfideUser->afterSave(true, false)
+#8 /home/gristech/l4/vendor/zizaco/confide/src/Zizaco/Confide/ConfideUser.php(243): LaravelBook\Ardent\Ardent->save(Array, Array, Array, NULL, NULL)
+#9 /home/gristech/l4/vendor/zizaco/confide/src/Zizaco/Confide/ConfideUser.php(159): Zizaco\Confide\ConfideUser->real_save(Array, Array, Array, NULL, NULL)
+#10 /home/gristech/l4/app/controllers/user/UserController.php(38): Zizaco\Confide\ConfideUser->save()
+#11 [internal function]: UserController->postIndex()
+#12 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#13 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#14 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#15 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#16 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#17 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#18 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#22 {main} [] []
+[2013-05-20 07:09:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 09:18:15] log.ERROR: exception 'InvalidArgumentException' with message 'View [home.sidebar] not found.' in /home/gristech/l4/bootstrap/compiled.php:15295
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(15249): Illuminate\View\FileViewFinder->findInPaths('home.sidebar', Array)
+#1 /home/gristech/l4/vendor/robclancy/presenter/src/Robbo/Presenter/View/Environment.php(20): Illuminate\View\FileViewFinder->find('home.sidebar')
+#2 /home/gristech/l4/bootstrap/compiled.php(5379): Robbo\Presenter\View\Environment->make('home.sidebar')
+#3 /home/gristech/l4/app/controllers/HomeController.php(32): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 /home/gristech/l4/app/controllers/HomeController.php(32): Illuminate\Support\Facades\View::make('home.sidebar')
+#5 [internal function]: HomeController->getView('sidebar')
+#6 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#7 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#8 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('sidebar')
+#10 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#11 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#12 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-05-20 09:19:48] log.ERROR: exception 'InvalidArgumentException' with message 'View [home.fivenine] not found.' in /home/gristech/l4/bootstrap/compiled.php:15295
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(15249): Illuminate\View\FileViewFinder->findInPaths('home.fivenine', Array)
+#1 /home/gristech/l4/vendor/robclancy/presenter/src/Robbo/Presenter/View/Environment.php(20): Illuminate\View\FileViewFinder->find('home.fivenine')
+#2 /home/gristech/l4/bootstrap/compiled.php(5379): Robbo\Presenter\View\Environment->make('home.fivenine')
+#3 /home/gristech/l4/app/controllers/HomeController.php(32): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 /home/gristech/l4/app/controllers/HomeController.php(32): Illuminate\Support\Facades\View::make('home.fivenine')
+#5 [internal function]: HomeController->getView('fivenine')
+#6 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#7 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#8 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('fivenine')
+#10 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#11 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#12 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-05-20 10:15:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:53:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:57:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:57:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:59:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:59:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:59:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 10:59:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:01:14] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:08:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:10:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:13:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-20 11:13:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:13:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:15:56] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:16:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:17:03] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:17:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:22:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:24:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:24:52] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:25:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:26:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:27:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:27:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:28:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:39:39] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:40:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:40:59] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:42:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:43:04] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 11:43:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 13:25:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-20 18:50:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 18:50:27] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 18:51:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/vendor/zizaco/entrust/src/Zizaco/Entrust/Entrust.php(118): Illuminate\Foundation\Application->abort(404)
+#1 [internal function]: Zizaco\Entrust\Entrust->Zizaco\Entrust\{closure}(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(14855): call_user_func_array(Object(Closure), Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(14805): Illuminate\Routing\Route->callFilter('admin_b1b79d', Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/bootstrap/compiled.php(14766): Illuminate\Routing\Route->callBeforeFilters(Object(Illuminate\Http\Request))
+#5 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-05-20 18:51:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:1120
+Stack trace:
+#0 /home/gristech/l4/vendor/zizaco/entrust/src/Zizaco/Entrust/Entrust.php(118): Illuminate\Foundation\Application->abort(404)
+#1 [internal function]: Zizaco\Entrust\Entrust->Zizaco\Entrust\{closure}(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(14855): call_user_func_array(Object(Closure), Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(14805): Illuminate\Routing\Route->callFilter('admin_b1b79d', Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/bootstrap/compiled.php(14766): Illuminate\Routing\Route->callBeforeFilters(Object(Illuminate\Http\Request))
+#5 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#6 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#7 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#9 {main} [] []
+[2013-05-20 18:51:41] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 18:51:46] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Asset [assets/img/glyphicons-halflings.png] was unable to be processed.' in /home/gristech/l4/vendor/jasonlewis/basset/src/Basset/Output/Controller.php:45
+Stack trace:
+#0 [internal function]: Basset\Output\Controller->processAsset('public-css', 'assets/img/glyp...')
+#1 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#2 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('processAsset', Array)
+#3 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'processAsset', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('public-css', 'assets/img/glyp...')
+#5 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#6 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#7 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-05-20 20:11:07] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-20 20:38:21] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in /home/gristech/l4/bootstrap/compiled.php:8654
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 /home/gristech/l4/bootstrap/compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-20 20:39:34] log.ERROR: exception 'InvalidArgumentException' with message 'View [home.license] not found.' in /home/gristech/l4/bootstrap/compiled.php:15295
+Stack trace:
+#0 /home/gristech/l4/bootstrap/compiled.php(15249): Illuminate\View\FileViewFinder->findInPaths('home.license', Array)
+#1 /home/gristech/l4/vendor/robclancy/presenter/src/Robbo/Presenter/View/Environment.php(20): Illuminate\View\FileViewFinder->find('home.license')
+#2 /home/gristech/l4/bootstrap/compiled.php(5379): Robbo\Presenter\View\Environment->make('home.license')
+#3 /home/gristech/l4/app/controllers/HomeController.php(32): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 /home/gristech/l4/app/controllers/HomeController.php(32): Illuminate\Support\Facades\View::make('home.license')
+#5 [internal function]: HomeController->getView('license')
+#6 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#7 /home/gristech/l4/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getView', Array)
+#8 /home/gristech/l4/bootstrap/compiled.php(8312): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getView', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('license')
+#10 /home/gristech/l4/bootstrap/compiled.php(14789): call_user_func_array(Object(Closure), Array)
+#11 /home/gristech/l4/bootstrap/compiled.php(14768): Illuminate\Routing\Route->callCallable()
+#12 /home/gristech/l4/bootstrap/compiled.php(8332): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 /home/gristech/l4/bootstrap/compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 /home/gristech/l4/bootstrap/compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 /home/gristech/l4/public/index.php(51): Illuminate\Foundation\Application->run()
+#16 {main} [] []

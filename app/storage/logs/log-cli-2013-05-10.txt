@@ -1,0 +1,25 @@
+[2013-05-10 02:33:35] log.ERROR: exception 'RuntimeException' with message 'The "--field" option does not exist.' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(154): Symfony\Component\Console\Input\ArgvInput->addLongOption('field', NULL)
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--field')
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(60): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(226): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Application.php(882): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Application.php(212): Symfony\Component\Console\Application->doRunCommand(Object(Way\Generators\Commands\MigrationGeneratorCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\artisan(59): Symfony\Component\Console\Application->run()
+#9 {main} [] []
+[2013-05-10 04:20:12] log.ERROR: exception 'InvalidArgumentException' with message 'Command "rollback" is not defined.
+
+Did you mean this?
+    migrate:rollback' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Application.php:638
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Application.php(209): Symfony\Component\Console\Application->find('rollback')
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\vendor\symfony\console\Symfony\Component\Console\Application.php(119): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-05-10 06:52:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=', expecting ']'' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\app\database\seeds\SurlsTableSeeder.php:11
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

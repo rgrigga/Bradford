@@ -1,0 +1,21 @@
+<?php $__env->startSection('content'); ?>
+
+   <h2>views -> home</h2>
+
+<p>
+Laravel provides an easy method of protecting your application from cross-site request forgeries. First, a random token is placed in your user's session. Don't sweat it, this is done automatically. Next, use the token method to generate a hidden form input field containing the random token on your form:
+
+Adding The CSRF Token To A Form
+
+echo Form::token();
+
+Attaching The CSRF Filter To A Route
+
+Route::post('profile', array('before' => 'csrf', function()
+{
+    //
+}));
+
+</p>
+    
+<?php $__env->stopSection(); ?>

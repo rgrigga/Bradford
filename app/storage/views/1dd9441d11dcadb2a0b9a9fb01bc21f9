@@ -1,0 +1,86 @@
+
+<?php /*  Web site Title  */ ?>
+<?php $__env->startSection('title'); ?>
+<?php echo e(Lang::get('user/user.settings')); ?> ::
+@parent
+<?php $__env->stopSection(); ?>
+
+<?php /*  New Laravel 4 Feature in use  */ ?>
+<?php $__env->startSection('styles'); ?>
+@parent
+body {
+	background: #f2f2f2;
+}
+<?php $__env->stopSection(); ?>
+
+<?php /*  Content  */ ?>
+<?php $__env->startSection('content'); ?>
+<div class="page-header">
+	<h3>Edit your settings</h3>
+</div>
+<form method="post" action="" class="form-horizontal" autocomplete="off">
+	<!-- CSRF Token -->
+	<input type="hidden" name="_token" id="csrf_token" value="<?php echo e(csrf_token()); ?>" />
+	<!-- ./ csrf token -->
+
+	<!-- First Name -->
+	<div class="control-group <?php echo e($errors->has('first_name') ? 'error' : ''); ?>">
+		<label class="control-label" for="first_name">First Name</label>
+		<div class="controls">
+			<input type="text" name="first_name" id="first_name" value="<?php echo e(Input::old('first_name', $user->first_name)); ?>" />
+			<?php echo e($errors->first('first_name')); ?>
+		</div>
+	</div>
+	<!-- ./ first name -->
+
+	<!-- Last Name -->
+	<div class="control-group <?php echo e($errors->has('last_name') ? 'error' : ''); ?>">
+		<label class="control-label" for="last_name">Last Name</label>
+		<div class="controls">
+			<input type="text" name="last_name" id="last_name" value="<?php echo e(Input::old('last_name', $user->last_name)); ?>" />
+			<?php echo e($errors->first('last_name')); ?>
+		</div>
+	</div>
+	<!-- ./ last name -->
+
+	<!-- Email -->
+	<div class="control-group <?php echo e($errors->has('email') ? 'error' : ''); ?>">
+		<label class="control-label" for="email">Email</label>
+		<div class="controls">
+			<input type="text" name="email" id="email" value="<?php echo e(Input::old('email', $user->email)); ?>" />
+			<?php echo e($errors->first('email')); ?>
+		</div>
+	</div>
+	<!-- ./ email -->
+
+	<!-- Password -->
+	<div class="control-group <?php echo e($errors->has('password') ? 'error' : ''); ?>">
+		<label class="control-label" for="password">Password</label>
+		<div class="controls">
+			<input type="password" name="password" id="password" value="" />
+			<?php echo e($errors->first('password')); ?>
+		</div>
+	</div>
+	<!-- ./ password -->
+
+	<!-- Password Confirm -->
+	<div class="control-group <?php echo e($errors->has('password_confirmation') ? 'error' : ''); ?>">
+		<label class="control-label" for="password_confirmation">Password Confirm</label>
+		<div class="controls">
+			<input type="password" name="password_confirmation" id="password_confirmation" value="" />
+			<?php echo e($errors->first('password_confirmation')); ?>
+		</div>
+	</div>
+	<!-- ./ password confirm -->
+
+	<!-- Update button -->
+	<div class="control-group">
+		<div class="controls">
+			<button type="submit" class="btn">Update</button>
+		</div>
+	</div>
+	<!-- ./ update button -->
+</form>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('site.layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

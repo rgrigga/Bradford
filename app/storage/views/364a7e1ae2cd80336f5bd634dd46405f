@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php echo $__env->make('partials/head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<body>
+<?php echo $__env->yieldContent('mystyle'); ?>
+
+		<!-- To make sticky footer need to wrap in a div -->
+<div id="wrap">
+
+	<?php echo $__env->make('partials/nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<div class="visible-desktop spacer" style="margin-top:160px;"></div>
+		<!-- ./ navbar -->
+
+		<!-- Container -->
+		<div class="container">
+			<!-- Notifications -->
+			<?php echo $__env->make('notifications', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			<!-- ./ notifications -->
+
+			<!-- Content -->
+			
+			<?php echo $__env->yieldContent('content'); ?>
+
+			
+
+			<!-- ./ content -->
+		</div>
+		<!-- ./ container -->
+
+		<!-- the following div is needed to make a sticky footer -->
+		
+		
+</div>
+		<!-- ./wrap -->
+<div id="push"></div>
+
+<?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

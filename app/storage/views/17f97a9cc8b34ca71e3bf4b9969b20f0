@@ -1,0 +1,10 @@
+<?php $__env->startSection('content'); ?>
+
+<h2>
+	<?php echo $photo->caption; ?>
+</h2>
+<p><?php echo HTML::link('https://tutsplus.com/lesson/resource-controllers-part-2/'); ?>
+</p>
+<img src="/assets/<?php echo $photo->path; ?>" alt="<?php echo $photo->caption; ?>">
+
+<?php $__env->stopSection(); ?>

@@ -1,0 +1,10 @@
+[15-May-2013 21:59:31 UTC] PHP Fatal error:  Out of memory (allocated 9699328) (tried to allocate 30720 bytes) in /home/gristech/l4/vendor/symfony/console/Symfony/Component/Console/Helper/TableHelper.php on line 112
+[15-May-2013 22:01:20 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142
+[15-May-2013 22:09:39 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142
+[15-May-2013 22:15:26 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142
+[15-May-2013 22:15:32 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142
+[15-May-2013 22:15:39 UTC] PHP Fatal error:  Out of memory (allocated 9699328) (tried to allocate 30720 bytes) in /home/gristech/l4/vendor/symfony/console/Symfony/Component/Console/Helper/TableHelper.php on line 112
+[15-May-2013 22:15:54 UTC] PHP Fatal error:  Out of memory (allocated 9699328) (tried to allocate 30720 bytes) in /home/gristech/l4/vendor/symfony/console/Symfony/Component/Console/Helper/TableHelper.php on line 112
+[15-May-2013 22:16:07 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142
+[15-May-2013 22:35:12 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142
+[15-May-2013 22:43:57 UTC] PHP Fatal error:  Out of memory (allocated 8912896) (tried to allocate 30720 bytes) in /home/gristech/l4/app/controllers/admin/AdminBlogsController.php on line 142

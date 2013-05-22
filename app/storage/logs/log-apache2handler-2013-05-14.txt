@@ -1,0 +1,160 @@
+[2013-05-14 16:41:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 16:41:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 16:41:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 16:41:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 16:41:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 17:34:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 17:34:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 17:34:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 17:34:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 17:34:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:49:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:49:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:49:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:49:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:49:12] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:50:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:50:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:50:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:50:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-05-14 18:50:58] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php:8654
+Stack trace:
+#0 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8355): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(8331): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(989): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\bootstrap\compiled.php(972): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\Ryan\Documents\GitHub\Laravel-4-Bootstrap-Starter-Site\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

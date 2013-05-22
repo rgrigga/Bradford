@@ -1,0 +1,24 @@
+<?php $__env->startSection('content'); ?>
+<ul class="photos">
+    <?php foreach($photos as $photo): ?>
+		<li>
+			<figure>
+
+
+				<img src="/assets/<?php echo $photo->path; ?>" alt="<?php echo $photo->caption; ?>">
+				<figcaption>
+					<a href="<?php echo route('photos.show',
+					['photos' => $photo->id]); ?>">
+						<?php echo $photo->id; ?> <?php echo $photo->caption; ?>
+					</a>
+
+				</figcaption>
+			</figure>
+		</li>
+
+
+		
+    <?php endforeach; ?>
+    
+</ul>
+<?php $__env->stopSection(); ?>

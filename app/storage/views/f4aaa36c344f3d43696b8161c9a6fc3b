@@ -1,0 +1,9 @@
+<?php $__env->startSection('content'); ?>
+
+<h2>
+	<?php echo $photo->caption; ?>
+</h2>
+
+<img src="/assets/<?php echo $photo->path; ?>" alt="<?php echo $photo->caption; ?>">
+
+<?php $__env->stopSection(); ?>

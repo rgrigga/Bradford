@@ -6,17 +6,16 @@
 @section('content')
 
 <div class="container">			
-			<div class="row">
-				<div class="span12"><p class="text-center muted credit">Bradford Insurance Group is a Full Service Insurance Agent near Columbus Ohio.</p></div>
-			</div>
 
+<div class="row">
+<div class="span12">
 			
+<!-- Main hero unit for a primary marketing message or call to action -->
 
+		<!-- hero-unit -->
 	<div class="hero-unit">
 		
 		<div class="row">
-
-			
 
 			<div id="myCarousel" class="carousel slide">
 				<div class="carousel-inner">
@@ -79,15 +78,20 @@
 				</div>
 			</div>
 			
+		</div>
 	</div>
+	<!-- ./ Hero Unit -->
+</div>
+<!-- span -->
+</div>
+<!-- row -->
+
+<div class="row">
+	<div class="span12"><p class="text-center muted credit">Bradford Insurance Group is a Full Service Insurance Agent near Columbus Ohio.</p></div>
 </div>
 
 <div class="row">
 	<div class="span5">
-
-<!-- Main hero unit for a primary marketing message or call to action -->
-
-		<!-- hero-unit -->
 
 		<!-- Example row of columns -->
 		<div class="row">
